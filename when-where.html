@@ -65,6 +65,22 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<style>
+    	.google-maps {
+        	position: relative;
+        	padding-bottom: 75%; // This is the aspect ratio
+        	height: 0;
+        	overflow: hidden;
+    	}
+    	.google-maps iframe {
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100% !important;
+        	height: 100% !important;
+    	}
+	</style>
+
 	</head>
 	<body>
 		<div id="fh5co-wrapper">
@@ -143,7 +159,9 @@
 				<div class="row">
 					<div class="col-md-12">
 						<!--<div id="map" class="fh5co-map"></div>-->
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.282456527807!2d75.93354101477205!3d22.75489668508924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631d7cd83ce825%3A0xe5fcb7c64701d453!2sRoyal+Orchid+Marriage+Garden+%26+Banquet+Hall!5e0!3m2!1sen!2sus!4v1529628510506" width="1140" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<div class="google-maps">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.282456527807!2d75.93354101477205!3d22.75489668508924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631d7cd83ce825%3A0xe5fcb7c64701d453!2sRoyal+Orchid+Marriage+Garden+%26+Banquet+Hall!5e0!3m2!1sen!2sus!4v1529628510506" width="1140" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
